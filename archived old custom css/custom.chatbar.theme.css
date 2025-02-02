@@ -1,0 +1,56 @@
+/**
+ * @name (CUSTOM) chatbar changes
+ * @description custom css
+ * @author ahm
+ * @version 6.9.0
+ * @authorId 447739051534057473
+ */
+
+/*remove apps icon in chatbar*/
+button[class="button_e6e74f button__201d5 lookBlank__201d5 colorBrand__201d5 grow__201d5"] {
+    display: none;
+}
+/* Hide annoying sticker popup window that appears when you type */
+.channelTextArea_f75fb0 > .container_d4ced7 {
+    display: none;
+}
+
+/* Removes "Sticker picker" button from message bar */
+button[aria-label="Open sticker picker"] {
+    display: none;
+}
+
+/* Removes "GIF picker" button from message bar */
+button[aria-label="Open GIF picker"] {
+    display: none;
+}
+
+
+/*recolor new message bar on channels*/
+.unreadPill__908e2 {
+    display: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+.unreadPillCapStroke__908e2 {
+    display: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+.content__908e2 {
+    display: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+/*remove the ability to close emoji picker area buttons*/
+.inner__74017 > div[id="buttonsParent"] {
+    display: none;
+}
+
+/*remove "message (channel name)" when nothing is written in textbox*/
+div[class="placeholder__1b31f slateTextArea_ec4baf fontSize16Padding__74017"] {
+    display: none;
+}

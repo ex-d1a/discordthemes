@@ -1,0 +1,30 @@
+/**
+ * @name (CUSTOM) VC changes
+ * @description custom css
+ * @author ahm
+ * @version 6.9.0
+ * @authorId 447739051534057473
+ */
+
+/*hide turn on camera button in vc*/
+button[aria-label="Turn On Camera"] {
+    display: none;
+}
+
+/*remove button on top right of the start activity button when in vc*/
+.dot__148e9.maskSecondary__148e9 {
+    display: none;
+}
+
+/* Remove VC Icons (chilling status) */
+[class*=iconGroup]:has([class*=hangStatusIcon], svg>path:not([d*='m2.7 22.7 20-20a1'], [d*='M22.7 2.7a1 1']), [class*=gameIcon]) {
+    display: none;
+}
+
+[class*=layerContainer] [class*=popout]:has([class*=text-xs-medium], [class*=options]) {
+    display: none;
+}
+
+.activityBiteSizePopout_c1d9fd.activity_f00225 {
+    display: none;
+}

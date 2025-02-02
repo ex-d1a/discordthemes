@@ -1,0 +1,1124 @@
+/**
+ * @name discord improvement theme
+ * @description custom css
+ * @author ahm
+ * @version 6.9.0
+ * @authorId 447739051534057473
+ */
+
+/*@import url("https://raw.githack.com/Skamt/BDAddons/main/CSS/AddonsCounter.css");*/
+@import url(https://davart154.github.io/Themes/Icon%20Revert%202023/2023%20Icon%20Revert.css);
+@import url("https://syndishanx.github.io/Discord-Dark/Imports/SettingsIcons.css");
+@import url(https://dl.dafont.com/dl/?f=zekton);
+
+
+
+/*------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------
+* MISC OR NOT YET CATEGORIZED
+* ------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------*/ 
+
+
+/*remove "play again" */
+h2[class="headerContainer__675e5 privateChannelsHeaderContainer__99e7c container__13cf1 text__13cf1"] {
+    display: none;
+}
+div[class="itemContainer__675e5"] {
+    display: none;
+}
+
+/* Stickers same size as emojis */
+.assetWrapper-3GNt0z {
+    max-width: 48px;
+    max-height: 48px;
+}
+
+/*recolor bot tag*/
+span[class="botTagCozy_c19a55 botTag_c19a55 botTagRegular__82f07 botTag__82f07 rem__82f07"] {
+    background-color: #757575
+}
+
+span[class="botTag__5d473 botTagRegular__82f07 botTag__82f07 px__82f07"] {
+    background-color: #757575
+}
+
+[class="botTagCozy_c19a55 botTag_c19a55 botTagRegular__82f07 botTag__82f07 rem__82f07"] {
+    background-color: #757575
+}
+
+[class="botTagCompact_c19a55 botTag_c19a55 botTagRegular__82f07 botTag__82f07 rem__82f07"] {
+    background-color: #757575
+}
+
+/*hide "stream (activity)" button next to the activity u are doing shown on top of mute/deafen buttons*/
+.panelButtonContainer_bf1a22 {
+    display: none;
+}
+
+/*removes top left small discord text*/
+div[class="wordmarkWindows__421ed wordmark__421ed"] {
+    display: none;
+}
+
+    /*remove the "discord" text on top left, in the titlebar*/
+    div[class="wordmarkWindows__421ed wordmark__421ed"] > ::before {
+        display: none;
+    }
+
+div[class="wordmarkWindows__421ed wordmark__421ed"] {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+    div[class="wordmarkWindows__421ed wordmark__421ed"] > ::after {
+        display: none;
+    }
+
+.typeWindows__421ed.withFrame__421ed.titleBar__421ed {
+    display: none;
+}
+
+/*------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------
+* CHANNEL/DM MESSAGES CONTAINER AREA CHANGES, ALSO MESSAGE POPOUTS CHANGES
+* ------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------*/
+
+/*remove wave to say hi*/
+.welcomeCTA_f5d1e2 {
+    display: none;
+}
+
+/*remove green arrow next to server join msg*/
+.iconContainer__235ca {
+    display: none;
+}
+
+/*remove new server tutorial at the start of channel*/
+.cardWrapper_aae012 {
+    display: none;
+}
+
+div[class="text-sm-normal__95a78 subtitle_aae012"] {
+    display: none;
+}
+
+
+/*make "report message" text white*/
+.item_c1e9c4.labelContainer_c1e9c4.colorDanger_c1e9c4.colorDefault_c1e9c4[id="message-report"] {
+    color: #B5BAC1 !important;
+}
+
+.item_c1e9c4.labelContainer_c1e9c4.colorDanger_c1e9c4.colorDefault_c1e9c4.focused_c1e9c4[id="message-report"] {
+    background-color: #505CDC !important;
+    color: #FFFFFF !important;
+}
+
+/*remove follow bar in bottom(check later)*/
+div[class="wrapper__44df5"] {
+    display: none;
+}
+
+/*remove NEW unread pill cap at the end of the grey new message indicator*/
+.unreadPill__908e2.endCap__908e2 {
+    display: none;
+}
+
+/*removes message divider bars that seperates messages sent at diff days*/
+div[class="divider__5126c hasContent__5126c divider__908e2 hasContent__908e2"] {
+    display: none;
+}
+
+div[id="---new-messages-bar"] > .content__908e2 {
+    display: none;
+}
+
+div[class="divider__5126c hasContent__5126c divider__908e2 hasContent__908e2"] > .content__908e2 {
+    display: none;
+}
+
+/*"gif" text fix (maybe not working?)*/
+.altText__0f481 {
+    margin: .25rem 0 -0.15rem;
+    line-height: 17px;
+}
+
+
+/*------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------
+* CHANNEL LIST, SERVER LIST, MEMBER LIST CHANGES
+* ------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------*/
+
+/*removes guild(server) badges near name on top(check later)*/
+div[class="guildIconV2Container__85d16"] {
+    display: none;
+}
+
+/* remove new unreads at bottom and top of channel list(check later ?, fixed to be working but might cause issues with new mentions text at the same area)*/
+div[class="container__7aaec bottom__7aaec"] {
+    display: none;
+}
+
+div[class="container__7aaec top__7aaec"] {
+    display: none;
+}
+
+/*remove the little white dot next to channels with unread msg*/
+.unread__2ea32.unreadImportant__2ea32 {
+    display: none;
+}
+
+/*change color of NEW bar under serverlist for mentions*/
+.bar__3b95d.unreadMentionsBar_ef3116 {
+    background-color: #505050FF;
+}
+
+/*REMOVE EVENTS*/
+li[data-list-item-id="channels___upcoming-events-1162327527356903594"] {
+    display: none;
+}
+/*li[class="containerDefault_c69b6d"] {
+    display: none;
+}*/ /*this removes all channels from the channel list not very useful tbh*/
+div[style="height: 12px;"] {
+    height: 0px;
+}
+
+div[class="sectionDivider__629e4"] {
+    display: none;
+    height: 0;
+}
+
+.containerDefault_c69b6d.wrapper__2ea32 {
+    display: none;
+}
+
+.link__2ea32.basicChannelRowLink__2ea32 {
+    display: none;
+    height: 0px;
+}
+
+/* Removes "Support" question mark button */
+a[href="https://support.discord.com"] {
+    display: none;
+}
+
+/*removes blue mark as read bar on top*/
+div[class="newMessagesBar__0f481 barBase__0f481"] {
+    display: none;
+}
+
+/* (check later) removes "new" at the end of the unread bar on top of channe and the date in middlel, also changes color of it*/
+span[class="unreadPill__908e2 endCap__908e2"] {
+    display: none;
+}
+
+span[class="content__908e2"] {
+    display: none;
+}
+
+div[id="---new-messages-bar"] {
+    border-color: #666666FF;
+}
+
+/*remove white dot next to servers with unread messages*/
+.pill_e5445c.wrapper__58105 {
+    display: none;
+}
+
+.pill_e5445c.wrapper__58105 {
+    display: none;
+}
+
+/*remove the "ACTIVITY" thing showing people's activities on top of server member list*/
+h3[class="membersGroup_c8ffbb container__13cf1 text__13cf1"]:has(.headerContainer__095fe) {
+    display: none;
+}
+
+h3[class="membersGroup_c8ffbb container__13cf1"]:has(.headerContainer__095fe) {
+    display: none;
+}
+
+div[class="container__0f2e8 openOnHover__0f2e8"] {
+    display: none;
+}
+
+
+/*remove server boost level at the top of channel list*/
+div[data-list-item-id="channels___boosts-366342488870354944"] {
+    display: none;
+}
+
+/*disable thread suggestion*/
+.threadSuggestionBar__841c8 {
+    display: none;
+}
+
+
+/* remove community server icon next to server name on top left*/
+.guildIconV2Container__85d16 {
+    display: none;
+}
+
+/*removes statuses under users*/
+.text__19b6d {
+    display: none;
+}
+
+.emoji.emoji_e463a5.customStatusEmoji__19b6d {
+    display: none;
+}
+
+.subtext__0a06e {
+    display: none;
+}
+
+.subText__91a9d {
+    display: none;
+}
+
+.activityText__972a0 {
+    display: none; /*dms*/
+}
+
+.subText__91a9d {
+    display: none;
+}
+
+.subtext__0a06e {
+    display: none;
+}
+
+.activityText__5d473 {
+    display: none; /*server channel list*/
+}
+
+.activity__972a0.subtext__972a0 {
+    display: none;
+}
+
+.subtext__0a06e {
+    display: none;
+}
+
+.subText__20a53 {
+    display: none;
+}
+
+/*removes discover button on bottom left*/
+div[class="wrapperSimple_cc5dd2 wrapper_cc5dd2"]:has(svg > foreignObject > div[class="circleIconButton__5bc7e discoveryIcon_ef3116"]) {
+    display: none;
+}
+/* removes hide members list button(check later)*/
+div[aria-label="Hide Member List"] {
+    display: none;
+}
+/*remove "new" tag from channels*/
+[class="newChannel__599fa textBadge__2b1f5 base__2b1f5 eyebrow__2b1f5 baseShapeRound__2b1f5"] {
+    display: none;
+}
+
+/* Removes "Support" question mark button from search popup */
+.searchLearnMore__56fec {
+    display: none;
+}
+
+/* Hides "Mark as Read" and icon in the "Unread messages" notification */
+.barButtonAlt__0f481.barButtonBase__0f481 {
+    display: none;
+}
+
+/* Hides the New Message indicator next to only folders */
+.wrapper__48112 > .listItem__650eb > .pill_e5445c {
+    display: none;
+}
+
+/*make it so "x new mention" on top/bottom of channel list is gray*/
+.bar__7aaec.mentionsBar__7aaec {
+    background-color: #505050FF;
+}
+
+/*remove invite to server on channels selected/hovered*/
+[aria-label="Invite to Server"] > svg {
+    display: none
+}
+
+/*remove role icons on the server member list(not elsewhere)*/
+.membersGroup_c8ffbb.container_cc72c1 > span > span > img {
+    display: none;
+}
+
+/*recolor mention badge under servers at right bottom*/
+div[class="numberBadge__40d6f base__5ed84 eyebrow_c15ff6 baseShapeRound__2b1f5"] {
+    background-color: #505050FF !important;
+}
+
+div[class="numberBadge__2b1f5 base__2b1f5 eyebrow__2b1f5 baseShapeRound__2b1f5"] {
+    background-color: #505050FF !important;
+}
+
+
+/*------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------
+* CHATBAR/MESSAGE BAR CHANGES
+* ------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------*/
+
+/*remove apps icon in chatbar*/
+button[class="button_e6e74f button__201d5 lookBlank__201d5 colorBrand__201d5 grow__201d5"] {
+    display: none;
+}
+/* Hide annoying sticker popup window that appears when you type */
+.channelTextArea_f75fb0 > .container_d4ced7 {
+    display: none;
+}
+
+/* Removes "Sticker picker" button from message bar */
+button[aria-label="Open sticker picker"] {
+    display: none;
+}
+
+/* Removes "GIF picker" button from message bar */
+button[aria-label="Open GIF picker"] {
+    display: none;
+}
+
+
+/*recolor new message bar on channels*/
+.unreadPill__908e2 {
+    display: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+.unreadPillCapStroke__908e2 {
+    display: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+.content__908e2 {
+    display: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+/*remove the ability to close emoji picker area buttons*/
+.inner__74017 > div[id="buttonsParent"] {
+    display: none;
+}
+
+/*remove "message (channel name)" when nothing is written in textbox*/
+div[class="placeholder__1b31f slateTextArea_ec4baf fontSize16Padding__74017"] {
+    display: none;
+}
+
+
+/*------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------
+* FORUMS CHANGES
+* ------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------*/
+
+/* remove "X New" next to forum channels*/
+.channelInfo_c69b6d > .text-xs-semibold__767f1 {
+    display: none;
+}
+
+/*remove "(x new)" in the footer of forum posts*/
+[class="footer_faa96b"] > .messageCountBox_faa96b > [class="text-sm/semibold_dc00ef newMessageCount_faa96b"] {
+    display: none;
+}
+
+/*removes "x" or "x new" next to forum channels(assume x = any number)*/
+[class="channelInfo_c69b6d"]:has([class="text-xs/semibold_cf4812"]) {
+    display: none;
+}
+
+/*recolor the new post button in forum channels*/
+button[class="submitButton_d9be46 button__201d5 lookFilled__201d5 colorBrand__201d5 sizeSmall__201d5 grow__201d5"] {
+    background-color: #40404099 !important;
+}
+
+/*recolor original poster op text in forums*/
+.botTagCozy_c19a55.botTag_c19a55.botTagRegular__82f07.botTag__82f07.rem__82f07.botTagOP__82f07.botTag__82f07 {
+    background-color: #505050FF;
+}
+
+span[class="botText__82f07"] {
+    color: lightgray;
+}
+
+
+/*------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------
+* FRIENDS TAB CHANGES
+* ------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------*/
+
+/*make friends button in dm background transparent instead of red for some reason when using basicbackground theme, also fixes color of the text being too bright compared to normal*/
+.friendsButtonContainer__35e86 > li > div {
+    background-color: transparent;
+}
+
+div[class="avatarWithText__972a0 layout__20a53"] > div > .nameAndDecorators__20a53 > .name__20a53 {
+    color: rgb(160,160,160);
+}
+
+.avatarWithText__972a0.layout__20a53:hover > .content__20a53 > .nameAndDecorators__20a53 > .name__20a53 {
+    color: rgb(230, 230, 230) !important;
+}
+
+.hoverBarButton_f84418.button_f7ecac[aria-label="Forward"] {
+    display: none;
+}
+
+
+/*remove avatar near friends text in dm and remove green behind add frnd text*/
+.avatarWithText__972a0 > .avatar__20a53 {
+    display: none;
+}
+
+div[aria-label="Add Friend"] {
+    background-color: #00000000 !important;
+    display: none;
+}
+
+.item__133bf.item_b3f026 {
+    background-color: transparent;
+}
+
+div[aria-label="Add Friend"] > span {
+    color: #b5bac1;
+}
+
+.upperContainer_fc4f > .children__9293f > .iconWrapper__9293f > .icon__9293f {
+    display: none;
+}
+
+.nowPlayingColumn__133bf {
+    display: none;
+}
+
+.container__7d20c {
+    display: none;
+}
+
+/*removes buttons next to users in friends tab*/
+.actions_fc004c > .actionButton_f8fa06 {
+    display: none;
+}
+
+/* Removes the "Group DM" button and divider in Friends tab */
+.inviteToolbar__133bf {
+    display: none;
+}
+
+/* Removes "Active Now" section in Friends tab */
+.nowPlayingColumn__133bf {
+    display: none;
+}
+
+.nowPlayingColumn__133bf {
+    display: none;
+}
+
+.nowPlayingColumn__133bf {
+    display: none;
+}
+
+
+/*------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------
+* NITRO CHANGES
+* ------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------*/
+
+/* Removes the nitro button at left-bottom */
+.fixedBottomList-1yrBla {
+    display: none;
+}
+
+/* removes nitro icon next to someone boosted this server msg(check later)*/
+.icon__9f20a {
+    display: none;
+}
+
+/* Removes the Big Nitro Button */
+a[href="/store"] {
+    display: none;
+}
+
+/*NITRO EMOJI LOCK REMOVE*/
+.categoryItemLockIconContainer__0fa6d {
+    display: none;
+}
+
+.categorySection_c656ac.categorySectionNitroLocked_c656ac {
+    background-color: #00000000;
+}
+
+.lockedEmoji_d982c2.image__1859b {
+    background-color: #00000000;
+}
+
+.emojiLockIconContainer_d982c2 {
+    display: none;
+    background-color: #00000000;
+}
+
+.nitroTopDividerContainer_b3fb5f {
+    display: none;
+}
+
+.nitroBottomDivider_c656ac {
+    display: none;
+}
+
+.wrapper__14245.header_c656ac.inactiveNitroHeader_c656ac {
+    background-color: #00000000;
+}
+
+.header__14245.interactive__14245 {
+    background-color: #00000000;
+}
+
+div[class="categorySection_c656ac categorySectionCollapsed_c656ac categorySectionNitroLocked_c656ac"] {
+    background-color: #00000000;
+}
+
+div[class="categorySection_c656ac categorySectionCollapsed_c656ac categorySectionNitroLocked_c656ac categorySectionNitroDivider_c656ac"] {
+    background-color: #00000000;
+}
+
+.upsellContainer_a3bc57 {
+    display: none;
+}
+
+div[class="categorySection_c656ac categorySectionCollapsed_c656ac categorySectionNitroLocked_c656ac"] {
+    background-color: #00000000;
+}
+
+.nitroBottomDivider_c656ac {
+    display: none;
+}
+
+.categoryItemLockIconContainer__0fa6d {
+    display: none;
+}
+
+.premiumIconWrapper_c3e427.clickable_c3e427 {
+    display: none;
+}
+
+/*profile customization ad remover */
+.containerWrapper_e18107 {
+    display: none
+}
+
+[data-list-item-id*="__nitro"] {
+    display: none;
+}
+
+[data-list-item-id*="__shop"] {
+    display: none;
+}
+
+[aria-label="Send a gift"] {
+    display: none;
+}
+
+/*remove the bar that shows a servers nitro level under its banner*/
+[class="container_eff079 containerWithMargin_eff079"] {
+    display: none;
+}
+
+[class="container_eff079"] {
+    display: none;
+}
+
+/* Removes "Gift nitro" button from message bar */
+button[aria-label="Send a gift"] {
+    display: none;
+}
+
+/*removes some nitro promo*/
+.channel__972a0:has([data-list-item-id$="___nitro"]), .channel__972a0:has([data-list-item-id$="___shop"]), /*Shop and nitro private channels*/
+.containerWrapper_e18107, /*Userpopout nitro upsell*/
+.premiumTab__581ea, /*Nitro Settings Tab*/
+.buttons__74017 > button[aria-haspopup="dialog"], /*Gift Button*/
+.premiumFeatureBorder__65c15, /*Premium settings feature upsell cards.*/
+.container__8279f:has(.ctaButton__8279f) /*Shop advertisement*/ {
+    display: none;
+}
+
+/*remove nitro badge next to users in user list*/
+svg[class="premiumIcon__5d473 icon__5d473"] {
+    display: none;
+}
+
+/*h*/ /*i have no idea why the only comment on this is "h" but im assuming its some nitro related thing so who cares*/
+.premiumLabel_e681d1 > svg {
+    display: none;
+}
+
+
+/*------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------
+* USER PROFILE CHANGES
+* ------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------*/
+
+/*max height for user popouts */
+.userPopoutOverlayBackground_c69a7b {
+    max-height: 60vh;
+}
+
+/*remove view perms button next to the roles added by vencord permsviewer*/
+div[aria-label="View Permissions"] {
+    display: none;
+}
+
+
+/* remove the "message @(user)" under profiles*/
+.footer__5be3e > .channelTextArea__74017 {
+    display: none;
+}
+
+/* remove 3 dots on banner that shows view full profile/copy userid/etc*/
+.wrapper_da5890.biteSize_da5890 {
+    display: none;
+}
+
+/*remove background on user statuses(the "cloud" like thingy)*/
+.statusBubbleOuter_af9888.biteSize_ab8609.statusBubbleShape_af9888::before {
+    display: none;
+}
+
+.statusBubbleOuter_af9888.biteSize_ab8609.statusBubbleShape_af9888::after {
+    display: none;
+}
+
+[class="statusBubbleOuter_af9888 biteSize_ab8609 statusBubbleSingleLineWithTextShape_af9888"]::before {
+    display: none;
+}
+
+[class="statusBubbleOuter_af9888 biteSize_ab8609 statusBubbleSingleLineWithTextShape_af9888"]::after {
+    display: none;
+}
+
+/*bunch of changes to profiles (top two removes profile banners)*/
+.bannerSVGWrapper_b32cc2 > mask > rect {
+    display: none;
+    height: 0;
+}
+
+svg[class="mask__68edb"] {
+    display: none;
+}
+
+[class="biteSizeOuter_c69a7b userPopoutOuter_c69a7b userProfileOuter_c69a7b userProfileOuterUnthemed_c69a7b theme-dark"] {
+    width: 320px;
+}
+
+/*[class="avatar__75742 biteSize__75742 clickable__75742"] {
+    top: 50px !important;
+}*/
+
+/*fuck profile effects*/
+[class="profileEffects__01370"] {
+    display: none;
+}
+
+/*remove user/server avatars from next to "mutual x" in user profiles*/
+.mutuals__530ce > .section__530ce > .avatars_ef4a91 {
+    display: none;
+}
+
+/*remove add note from profiles*/
+button[class="button_fb7f94 icon_fb7f94 hover_fb7f94 visible_fb7f94 button__201d5 lookBlank__201d5 hoverColor_fb7f94"][aria-label="Add Note"] {
+    display: none;
+}
+
+/*remove avatar decoration*/
+.avatarDecoration__44b0c {
+    display: none;
+}
+
+.avatarDecoration_c19a55 {
+    display: none;
+}
+
+.avatarDecoration_c19a55 {
+    display: none;
+}
+
+[class="avatarDecoration_c19a55"] {
+    display: none;
+}
+
+/*make profile badges background transparent and 
+remove some badges like nitro badge or hypesquad also make originally
+known as badge invis*/
+div[class="profileBadges_f89da9 containerWithContent_b64375 container__8061a"] {
+    background-color: #00000000;
+}
+
+a[aria-label="Completed a Quest"] {
+    display: none;
+}
+
+div[aria-label="User Badges"] > a[href="https://discord.com/settings/premium"] {
+    display: none;
+}
+
+div[aria-label="User Badges"] {
+    display: none;
+}
+
+img[src="https://cdn.discordapp.com/badge-icons/6de6d34650760ba5551a79732e98ed60.png"] {
+    color: transparent;
+    background-color: transparent;
+}
+
+/* remove add friend button on banner in user profiles */
+button[class="button_fb7f94 icon_fb7f94 banner_fb7f94 button__201d5 lookFilled__201d5 bannerColor_fb7f94"][aria-label="Add Friend"] {
+    display: none;
+}
+
+button[class="button_fb7f94 icon_fb7f94 banner_fb7f94 button__201d5 lookFilled__201d5 bannerColor_fb7f94"][aria-label="Mod View"] {
+    display: none;
+}
+
+/*fix showallroles to have no collapse button*/
+div[aria-label="Collapse Roles"] {
+    display: none;
+}
+
+
+/*------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------
+* DISCORD SETTINGS TAB CHANGES
+* ------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------*/
+
+/*remove icons next to tabs in discord settings, and hide the merch/hypesquad tab */
+.item_b3f026.themed_b3f026::before {
+    display: none
+}
+
+.item_b3f026.themed_b3f026::after {
+    display: none
+}
+
+div[class="item_b3f026 themed_b3f026"][aria-label="Merch"] {
+    display: none !important;
+}
+
+/*remove vencord donation ad in vencord settings tabs*/
+[class="vc-settings-card vc-settings-donate cardPrimary__73069 card__73069"] {
+    display: none;
+}
+
+
+/*removes nitro tab, merch tab and hypesquad tab in settings*/
+.premiumTab__581ea.item_b3f026.themed_b3f026 {
+    display: none;
+}
+
+div[aria-label="Merch"] {
+    display: none;
+}
+
+
+/*------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------
+* TOPBAR(THE AREA CONTAINING CHANNEL NAME/BUTTONS IN SERVERS AND USERNAME/BUTTONS IN DMS)
+* ------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------*/
+
+/*removes some useless dm button*/
+div[aria-label="Start Voice Call"] {
+    display: none;
+}
+
+div[aria-label="Start Video Call"] {
+    display: none;
+}
+
+div[aria-label="Show User Profile"] {
+    display: none;
+}
+
+div[aria-label="Show User Profile (Unavailable)"] {
+    display: none;
+}
+
+
+/*remove create neew group dm*/
+div[aria-label="New Group DM"] {
+    display: none;
+}
+
+.toolbar__9293f > .inviteToolbar__133bf {
+    display: none;
+}
+
+
+/*remove magnyfiying glass at end of search bar*/
+.iconContainer__4d295 {
+    display: none;
+}
+
+.iconContainer_fea832 {
+    display: none;
+}
+
+/* remove aka badge in dm*/
+.akaBadge__27cd4.textBadge_f05120.base__5ed84 {
+    display: none;
+}
+
+/*remove create dm button (check later) */
+div[aria-label="Create DM"] {
+    display: none;
+}
+
+/* recolors the pinned message unread badge to white*/
+.iconBadge__9293f {
+    background-color: #b5bac1
+}
+
+.iconBadge__9293f {
+    background-color: #b5bac1
+}
+
+
+
+/*------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------
+* VOICE CHANNEL CHANGES
+* ------------------------------------------------------------------------------------------
+* ------------------------------------------------------------------------------------------*/
+
+/*hide turn on camera button in vc*/
+button[aria-label="Turn On Camera"] {
+    display: none;
+}
+
+/*remove button on top right of the start activity button when in vc*/
+.dot__148e9.maskSecondary__148e9 {
+    display: none;
+}
+
+/* Remove VC Icons (chilling status) */
+[class*=iconGroup]:has([class*=hangStatusIcon], svg>path:not([d*='m2.7 22.7 20-20a1'], [d*='M22.7 2.7a1 1']), [class*=gameIcon]) {
+    display: none;
+}
+
+[class*=layerContainer] [class*=popout]:has([class*=text-xs-medium], [class*=options]) {
+    display: none;
+}
+
+.activityBiteSizePopout_c1d9fd.activity_f00225 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*EXPERIMENTAL SHIT
+:root {
+    --lol: 188; 
+    --channelcolor: rgb(var(--lol),var(--lol),var(--lol),255);
+}
+
+div[class="content__20a53"] > div >.name__20a53{
+        color: rgb(188,188,188);
+}
+button[class="searchBarComponent__35e86"]::content{
+        display: none;
+}
+.iconWrapper__9293f.clickable__9293f > .icon__9293f{
+        color: #884444;
+}
+div[class="member__5d473 member_c8ffbb container__91a9d clickable__91a9d"]{
+        background-color: #88444448;
+}
+div[class="member__5d473 member_c8ffbb offline__5d473 container__91a9d clickable__91a9d"]{
+        background-color: #88444448;
+}
+div[class="spineBorder__5b40b"]{
+        background-color: rgb(120,60,60)!important;
+}
+svg[class="spine__5b40b"]{
+        color: rgba(120, 60, 60)!important;
+}
+li[class="container__5b40b"] > ul > li > div[class="iconVisibility_c69b6d wrapper__2ea32 typeThread__2ea32"] > * > * > *{
+        color: var(--channelcolor)!important;
+}
+li[class="container__5b40b"] > ul > li > div > div{
+        background-color: #88444448;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 typeDefault__2ea32"] > div > a{
+        background-color: #88444448;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 modeUnreadImportant__2ea32 typeDefault__2ea32"] > div > a{
+        background-color: #88444448;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 typeVoice__2ea32"] > div > a{
+        background-color: #88444448;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 modeLocked__2ea32 typeVoice__2ea32"] > div > a{
+        background-color: #88444448;
+}
+.containerDefault_c69b6d > div > div > div > a{
+        background-color: #88444448;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 typeDefault__2ea32"] > div > * > * > *{
+        color: var(--channelcolor)!important;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 typeDefault__2ea32"] > div > * > * > * > *{
+        color: var(--channelcolor)!important;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 typeDefault__2ea32"] > div > * > * > * > * >*{
+        color: var(--channelcolor)!important;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 typeVoice__2ea32"] > div > * > * > *{
+        color: var(--channelcolor)!important;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 typeVoice__2ea32"] > div > * > * > * > *{
+        color: var(--channelcolor)!important;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 typeVoice__2ea32"] > div > * > * > * > * >*{
+        color: var(--channelcolor)!important;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 modeLocked__2ea32 typeVoice__2ea32"] > div > * > * > *{
+        color: var(--channelcolor)!important;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 modeLocked__2ea32 typeVoice__2ea32"] > div > * > * > * > *{
+        color: var(--channelcolor)!important;
+}
+.containerDefault_c69b6d > div[class="iconVisibility_c69b6d wrapper__2ea32 modeLocked__2ea32 typeVoice__2ea32"] > div > * > * > * > * >*{
+        color: var(--channelcolor)!important;
+}
+.containerDefault_c69b6d > div > div > div > * > *{
+        color: var(--channelcolor)!important;
+}
+.containerDefault_c69b6d > div > div > div > * > * > *{
+        color: var(--channelcolor)!important;
+}
+.containerDefault_c69b6d > div > div > div > * > * > * > *{
+        color: var(--channelcolor)!important;
+}
+.containerDefault__29444 > div > div > *{
+        color: rgb(200, 100, 100)!important;
+}*/
+/*END OF EXP*/
+
+/*
+:root {
+    --Chat-Font-Used: 'Zekton', Regular;
+    --Chat-Font-Size: 8px;
+}
+
+:not([class="hljs"]):not(code){
+    font-family: var(--Chat-Font-Used)!important;
+}
+
+.markup:not(code) {
+    font-size: var(--Chat-Font-Size)!important;
+}
+*/
+
+/* remove 3 buttons on the top (IDFK WHAT THIS DOES LOL)
+toolbar__9293f .iconWrapper__9293f:has([d^="M14.5 8a3 3 0 1"], [d^="M12 2.81a1 1 0 0 1"], [d^="M1.3 21.3a1 1 0 1"], [d^="M9.7 2.89c.18-.07.32-.24.37-.43a2 2 0 0 1"]){
+    display: none
+}*/
+
+
+
+/*revert the all images in one message get compressred thing
+[class*="ByOneGrid-"]:not([class*="OneGridSingle-"]),
+[class*="ByTwoGrid-"],
+[class*="ByThreeGrid-"] {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+[class*="ByOneGrid-"]:not([class*="OneGridSingle-"]) [class*="lazyImg"],
+[class*="ByTwoGrid-"] [class*="lazyImg"],
+[class*="ByThreeGrid-"] [class*="lazyImg"] {
+  aspect-ratio: unset;
+  height: auto !important;
+  width: auto !important;
+  margin-left: 0px !important;
+}
+
+[class^="mediaAttachmentsContainer-"] [class*="messageAttachmentMediaMosaic-"] {
+  max-width: fit-content;
+}
+
+[class*="mediaAttachmentsContainer-"] {
+  border-radius: 0px;
+}
+
+[class*="OneGridSingle-"] {
+  border-radius: 3px;
+}*/
+
+/*show what time a text was edited at
+.timestamp_c19a55:not(.timestampInline_c19a55, .timestampVisibleOnHover_c19a55) time::after {
+    content: " (" attr(aria-label) ")";
+    color: var(--text-muted);
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: lowercase;
+}
+.edited_c19a55:not(.message-translate-indicator) {
+    display: none;
+}*/
+
+/*removes role emojis/role icons
+.roleIcon__1e6f1{
+        display: none;
+}*/
+
+/*div[class="premiumLabel_e681d1"] {
+        display: none;
+}*/
+/* Removes the Search Bar at the top of DMS 
+.searchBar__35e86 {
+        display: none;
+}*/
+
+/* removes threads button 
+div[aria-label="Threads"] {
+        display: none;
+}*/
+
+/* removes notif settings button(check later)
+div[aria-label="Notification Settings"] {
+    display: none;
+}*/
+
+/* Removes "Inbox" button
+div[aria-label="Inbox"] {
+        display: none;
+}*/
+
+/* makes fields under embeds not show, do not use
+a[class="anchor_edefb8 anchorUnderlineOnHover_edefb8"] {
+        display: none;
+}*/
+
+
+

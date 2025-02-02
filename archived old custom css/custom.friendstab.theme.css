@@ -1,0 +1,79 @@
+/**
+ * @name (CUSTOM) friends tab changes
+ * @description custom css
+ * @author ahm
+ * @version 6.9.0
+ * @authorId 447739051534057473
+ */
+
+
+/*make friends button in dm background transparent instead of red for some reason when using basicbackground theme, also fixes color of the text being too bright compared to normal*/
+.friendsButtonContainer__35e86 > li > div {
+    background-color: transparent;
+}
+
+div[class="avatarWithText__972a0 layout__20a53"] > div > .nameAndDecorators__20a53 > .name__20a53 {
+    color: rgb(160,160,160);
+}
+
+.avatarWithText__972a0.layout__20a53:hover > .content__20a53 > .nameAndDecorators__20a53 > .name__20a53 {
+    color: rgb(230, 230, 230) !important;
+}
+
+.hoverBarButton_f84418.button_f7ecac[aria-label="Forward"] {
+    display: none;
+}
+
+
+/*remove avatar near friends text in dm and remove green behind add frnd text*/
+.avatarWithText__972a0 > .avatar__20a53 {
+    display: none;
+}
+
+div[aria-label="Add Friend"] {
+    background-color: #00000000 !important;
+    display: none;
+}
+
+.item__133bf.item_b3f026 {
+    background-color: transparent;
+}
+
+div[aria-label="Add Friend"] > span {
+    color: #b5bac1;
+}
+
+.upperContainer_fc4f > .children__9293f > .iconWrapper__9293f > .icon__9293f {
+    display: none;
+}
+
+.nowPlayingColumn__133bf {
+    display: none;
+}
+
+.container__7d20c {
+    display: none;
+}
+
+/*removes buttons next to users in friends tab*/
+.actions_fc004c > .actionButton_f8fa06 {
+    display: none;
+}
+
+/* Removes the "Group DM" button and divider in Friends tab */
+.inviteToolbar__133bf {
+    display: none;
+}
+
+/* Removes "Active Now" section in Friends tab */
+.nowPlayingColumn__133bf {
+    display: none;
+}
+
+.nowPlayingColumn__133bf {
+    display: none;
+}
+
+.nowPlayingColumn__133bf {
+    display: none;
+}

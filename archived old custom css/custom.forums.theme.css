@@ -1,0 +1,37 @@
+/**
+ * @name (CUSTOM) forums changes
+ * @description custom css
+ * @author ahm
+ * @version 6.9.0
+ * @authorId 447739051534057473
+ */
+
+
+/* remove "X New" next to forum channels*/
+.channelInfo_c69b6d > .text-xs-semibold__767f1 {
+    display: none;
+}
+
+/*remove "(x new)" in the footer of forum posts*/
+[class="footer_faa96b"] > .messageCountBox_faa96b > [class="text-sm/semibold_dc00ef newMessageCount_faa96b"] {
+    display: none;
+}
+
+/*removes "x" or "x new" next to forum channels(assume x = any number)*/
+[class="channelInfo_c69b6d"]:has([class="text-xs/semibold_cf4812"]) {
+    display: none;
+}
+
+/*recolor the new post button in forum channels*/
+button[class="submitButton_d9be46 button__201d5 lookFilled__201d5 colorBrand__201d5 sizeSmall__201d5 grow__201d5"] {
+    background-color: #40404099 !important;
+}
+
+/*recolor original poster op text in forums*/
+.botTagCozy_c19a55.botTag_c19a55.botTagRegular__82f07.botTag__82f07.rem__82f07.botTagOP__82f07.botTag__82f07 {
+    background-color: #505050FF;
+}
+
+span[class="botText__82f07"] {
+    color: lightgray;
+}
