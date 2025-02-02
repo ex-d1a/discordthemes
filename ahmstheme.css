@@ -103,7 +103,6 @@ div[class="text-sm-normal__95a78 subtitle_aae012"] {
     display: none;
 }
 
-
 /*make "report message" text white*/
 .item_c1e9c4.labelContainer_c1e9c4.colorDanger_c1e9c4.colorDefault_c1e9c4[id="message-report"] {
     color: #B5BAC1 !important;
@@ -364,6 +363,11 @@ div[class="numberBadge__2b1f5 base__2b1f5 eyebrow__2b1f5 baseShapeRound__2b1f5"]
 * CHATBAR/MESSAGE BAR CHANGES
 * ------------------------------------------------------------------------------------------
 * ------------------------------------------------------------------------------------------*/
+
+/*remove "commands" button to the right of the chatbar when in the dms of a bot*/
+button[class="entryPointAppCommandButton_a83188 app-launcher-app-dm-entrypoint button__201d5 lookFilled__201d5 colorBrand__201d5 sizeLarge__201d5 grow__201d5"]{
+    display: none;   
+}
 
 /*remove apps icon in chatbar*/
 button[class="button_e6e74f button__201d5 lookBlank__201d5 colorBrand__201d5 grow__201d5"] {
@@ -635,11 +639,6 @@ div[class="categorySection_c656ac categorySectionCollapsed_c656ac categorySectio
 }
 
 [class="container_eff079"] {
-    display: none;
-}
-
-/* Removes "Gift nitro" button from message bar */
-button[aria-label="Send a gift"] {
     display: none;
 }
 
