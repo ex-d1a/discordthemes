@@ -10,15 +10,12 @@
 @import url("https://syndishanx.github.io/Discord-Dark/Imports/SettingsIcons.css");
 @import url(https://dl.dafont.com/dl/?f=zekton);*/
 
-
-
+*/
 /*------------------------------------------------------------------------------------------
 * ------------------------------------------------------------------------------------------
 * MISC OR NOT YET CATEGORIZED
 * ------------------------------------------------------------------------------------------
-* ------------------------------------------------------------------------------------------*/ 
-
-
+* ------------------------------------------------------------------------------------------*/
 /*remove "play again" */
 h2[class="headerContainer__675e5 privateChannelsHeaderContainer__99e7c container__13cf1 text__13cf1"] {
     display: none;
@@ -26,7 +23,9 @@ h2[class="headerContainer__675e5 privateChannelsHeaderContainer__99e7c container
 div[class="itemContainer__675e5"] {
     display: none;
 }
-
+h2[class="headerContainer__675e5 privateChannelsHeaderContainer__99e7c container__13cf1 header__13cf1 text-sm/medium__13cf1"]{
+    display: none!important;
+}
 /* Stickers same size as emojis */
 .assetWrapper-3GNt0z {
     max-width: 48px;
@@ -55,35 +54,31 @@ span[class="botTag__5d473 botTagRegular__82f07 botTag__82f07 px__82f07"] {
     display: none;
 }
 
-/*removes top left small discord text*/
-div[class="wordmarkWindows__421ed wordmark__421ed"] {
+/*removes titlebar/topbar of the whole app*/
+.bar_c38106[data-windows="true"]{
     display: none;
 }
 
-    /*remove the "discord" text on top left, in the titlebar*/
-    div[class="wordmarkWindows__421ed wordmark__421ed"] > ::before {
-        display: none;
-    }
-
-div[class="wordmarkWindows__421ed wordmark__421ed"] {
-    visibility: hidden !important;
-    display: none !important;
+/*div[class="wordmarkWindows__421ed wordmark__421ed"] > ::after {
+    display: none;
 }
 
-    div[class="wordmarkWindows__421ed wordmark__421ed"] > ::after {
-        display: none;
-    }
+div[class="wordmarkWindows__421ed wordmark__421ed"]{
+    display: none!important;
+}
 
+.winButtonClose__421ed.winButton__421ed{
+    display: none;
+}*//*
 .typeWindows__421ed.withFrame__421ed.titleBar__421ed {
     display: none;
-}
+}*/
 
 /*------------------------------------------------------------------------------------------
 * ------------------------------------------------------------------------------------------
 * CHANNEL/DM MESSAGES CONTAINER AREA CHANGES, ALSO MESSAGE POPOUTS CHANGES
 * ------------------------------------------------------------------------------------------
 * ------------------------------------------------------------------------------------------*/
-
 /*remove wave to say hi*/
 .welcomeCTA_f5d1e2 {
     display: none;
@@ -142,17 +137,42 @@ div[class="divider__5126c hasContent__5126c divider__908e2 hasContent__908e2"] >
     line-height: 17px;
 }
 
+/*make locked channels not bright white*/
+.iconVisibility_c69b6d.wrapper__2ea32:has(div[aria-label="Text (Limited) icon"] > svg[class="icon__2ea32"]:not(svg[xmlns="http://www.w3.org/2000/svg"])) > * > * > * > * {
+    color: rgb(160, 160, 160) !important;
+}
+
+.iconVisibility_c69b6d.wrapper__2ea32:has(div[aria-label="Forum (Limited) icon"] > svg[class="icon__2ea32"]:not(svg[xmlns="http://www.w3.org/2000/svg"])) > * > * > * > * {
+    color: rgb(160, 160, 160) !important;
+}
+
+.iconVisibility_c69b6d.wrapper__2ea32:has(div[aria-label="Announcements (Limited) icon"] > svg[class="icon__2ea32"]:not(svg[xmlns="http://www.w3.org/2000/svg"])) > * > * > * > * {
+    color: rgb(160, 160, 160) !important;
+}
+
+.iconVisibility_c69b6d.wrapper__2ea32:has(div[aria-label="Forum (Limited) icon"] > svg[class="icon__2ea32"]:not(svg[xmlns="http://www.w3.org/2000/svg"])) > * > * > * > * {
+    color: rgb(160, 160, 160) !important;
+}
+
+.iconVisibility_c69b6d.wrapper__2ea32:has(div[aria-label="Stage (Locked) icon"] > svg[class="icon__2ea32"]:not(svg[xmlns="http://www.w3.org/2000/svg"])) > * > * > * > * {
+    color: rgb(160, 160, 160) !important;
+}
 
 /*------------------------------------------------------------------------------------------
 * ------------------------------------------------------------------------------------------
 * CHANNEL LIST, SERVER LIST, MEMBER LIST CHANGES
 * ------------------------------------------------------------------------------------------
 * ------------------------------------------------------------------------------------------*/
+/*recolors the top "direct messages" tabs button (this is to be used in conjunction with the background theme) */
+div[class="childWrapper__6e9f8 childWrapperNoHoverBg__6e9f8"] {
+    background-color: rgb(121, 56, 54) !important;
+}
 
 /*removes guild(server) badges near name on top(check later)*/
 div[class="guildIconV2Container__85d16"] {
     display: none;
 }
+
 
 /* remove new unreads at bottom and top of channel list(check later ?, fixed to be working but might cause issues with new mentions text at the same area)*/
 div[class="container__7aaec bottom__7aaec"] {
@@ -309,10 +329,8 @@ div[data-list-item-id="channels___boosts-366342488870354944"] {
 div[class="wrapperSimple_cc5dd2 wrapper_cc5dd2"]:has(svg > foreignObject > div[class="circleIconButton__5bc7e discoveryIcon_ef3116"]) {
     display: none;
 }
-/* removes hide members list button(check later)*/
-div[aria-label="Hide Member List"] {
-    display: none;
-}
+
+
 /*remove "new" tag from channels*/
 [class="newChannel__599fa textBadge__2b1f5 base__2b1f5 eyebrow__2b1f5 baseShapeRound__2b1f5"] {
     display: none;
@@ -357,16 +375,19 @@ div[class="numberBadge__2b1f5 base__2b1f5 eyebrow__2b1f5 baseShapeRound__2b1f5"]
     background-color: #505050FF !important;
 }
 
+/*remove member list username backgrounds*/
+div[class="childContainer__91a9d nameplated__91a9d"] > div[class="container__4bbc6 noFade__4bbc6"] {
+    display: none;
+}
 
 /*------------------------------------------------------------------------------------------
 * ------------------------------------------------------------------------------------------
 * CHATBAR/MESSAGE BAR CHANGES
 * ------------------------------------------------------------------------------------------
 * ------------------------------------------------------------------------------------------*/
-
 /*remove "commands" button to the right of the chatbar when in the dms of a bot*/
-button[class="entryPointAppCommandButton_a83188 app-launcher-app-dm-entrypoint button__201d5 lookFilled__201d5 colorBrand__201d5 sizeLarge__201d5 grow__201d5"]{
-    display: none;   
+button[class="entryPointAppCommandButton_a83188 app-launcher-app-dm-entrypoint button__201d5 lookFilled__201d5 colorBrand__201d5 sizeLarge__201d5 grow__201d5"] {
+    display: none;
 }
 
 /*remove apps icon in chatbar*/
@@ -837,21 +858,34 @@ div[aria-label="Merch"] {
 * ------------------------------------------------------------------------------------------
 * ------------------------------------------------------------------------------------------*/
 
+/* removes hide members list button and t he notification settings button on top of channels*/
+div[aria-label="Hide Member List"] {
+    display: none !important;
+}
+
+div[aria-label="Notification Settings"] {
+    display: none !important;
+}
+
 /*removes some useless dm button*/
 div[aria-label="Start Voice Call"] {
-    display: none;
+    display: none !important;
+}
+
+div[aria-label="Add Friends to DM"] {
+    display: none !important;
 }
 
 div[aria-label="Start Video Call"] {
-    display: none;
+    display: none !important;
 }
 
 div[aria-label="Show User Profile"] {
-    display: none;
+    display: none!important;
 }
 
 div[aria-label="Show User Profile (Unavailable)"] {
-    display: none;
+    display: none!important;
 }
 
 
@@ -1103,10 +1137,6 @@ div[aria-label="Threads"] {
         display: none;
 }*/
 
-/* removes notif settings button(check later)
-div[aria-label="Notification Settings"] {
-    display: none;
-}*/
 
 /* Removes "Inbox" button
 div[aria-label="Inbox"] {
